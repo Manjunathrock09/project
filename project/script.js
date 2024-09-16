@@ -69,3 +69,11 @@ let currentSlide = 0;
         }
          uniqueSlideWrapper.style.transform = `translateX(-${uniqueActiveSlideIndex * 100}%)`;
     }
+
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.class2');
+
+        // Toggle the visibility of the navigation links on mobile
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
