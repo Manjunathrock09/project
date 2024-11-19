@@ -541,6 +541,95 @@ display: block;
       padding: 20px;
       text-align: center;
   }
+
+/* Media query for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .Blogcontainer {
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+  }
+
+  .Blog {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .Blog h1 {
+      font-size: 1.8em; /* Adjust font size for smaller screens */
+      margin-bottom: 20px;
+  }
+
+  .post-container {
+      flex-direction: column; /* Stack posts vertically */
+      gap: 20px;
+  }
+
+  .post {
+      border-radius: 10px; /* Adjust radius for smaller screens */
+  }
+
+  .post img {
+      max-height: 200px; /* Limit image height */
+      object-fit: cover;
+  }
+
+  .post-info {
+      padding: 15px;
+  }
+}
+
+/* Media query for tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Blogcontainer {
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+  }
+
+  .Blog h1 {
+      font-size: 2.2em;
+  }
+
+  .post-container {
+      gap: 20px; /* Reduce the gap slightly */
+  }
+
+  .post img {
+      max-height: 300px; /* Adjust image height */
+      object-fit: cover;
+  }
+
+  .post-info {
+      padding: 18px;
+  }
+}
+
+/* Media query for laptops and desktops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Blogcontainer {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+  }
+
+  .Blog h1 {
+      font-size: 2.4em;
+  }
+
+  .post-container {
+      gap: 25px; /* Adjust spacing for larger screens */
+  }
+
+  .post img {
+      max-height: 400px; /* Keep larger image height */
+  }
+
+  .post-info {
+      padding: 20px;
+  }
+}
   .unique-carousel-wrapper {
   position: relative;
   width: 100%;
@@ -829,4 +918,33 @@ text-decoration: none;
 }
 .end-right a:hover {
 text-decoration: underline;
+}
+/* Responsive adjustments for the missing elements on tablets */
+.contanct {
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.contanct-section {
+  margin: 15px 0;
+}
+
+.logo-text {
+  font-size: 22px;
+}
+
+.end {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.end-section {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.end-section img {
+  width: 45px;
 }
